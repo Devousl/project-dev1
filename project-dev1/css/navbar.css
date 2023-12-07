@@ -1,0 +1,66 @@
+*{                                                                        /*<!--First section-->*/                         
+    margin:0;
+    padding:0;
+    font-family: cursive;
+    background:linear-gradient(to right,#ba5370 → #f4e2d8);
+}
+
+.banner{
+    width: 100%;
+    height: 28vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),url(https://images.unsplash.com/photo-1607430866111-3f2b5804f850?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2lubmFtb258ZW58MHx8MHx8fDA%3D);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.logo{
+    width: 100px;
+    cursor: pointer;
+    margin-left: -3rem;
+    margin-top: 1rem;
+
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 5px;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: flex;
+    margin-left: 50px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    text-transform: uppercase;
+
+}
+.navbar ul li::after{
+    content: '';
+    height: 5px;
+    width: 0%;
+background: linear-gradient(to right,#ff512f , #dd2476);
+position: absolute;
+left: 0%;
+bottom: -10px;
+transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+
+}
